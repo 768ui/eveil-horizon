@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interface d'administration Éveil Horizon pour gérer les prestations, tarifs, demandes de contact et contenus clients." />
+    <title>Administration | Éveil Horizon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Accueil Éveil Horizon">
+          <img src="assets/logo.svg" alt="Logo Éveil Horizon" class="brand-logo" />
+          <span>Éveil Horizon</span>
+        </a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Accompagnements</a>
+          <a href="collective.html">Collectifs</a>
+          <a href="espace-client.html">Espace client</a>
+          <a href="tarifs.html">Tarifs</a>
+          <a href="boutique.html">Boutique</a>
+          <a href="contact.html">Contact</a>
+          <a href="admin.html" class="nav-cta active">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero section-soft">
+        <div class="container narrow">
+          <p class="eyebrow">Administration</p>
+          <h1>Gestion des contenus et des services</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container admin-layout">
+          <div class="auth-box">
+            <h2>Connexion admin</h2>
+            <form id="admin-login-form" class="styled-form">
+              <label>
+                Identifiant
+                <input type="text" id="admin-user" placeholder="admin" required />
+              </label>
+              <label>
+                Mot de passe
+                <input type="password" id="admin-pass" placeholder="••••••••" required />
+              </label>
+              <button type="submit" class="btn btn-primary full">Se connecter</button>
+            </form>
+            <p class="form-note">Version démonstration. En production, utiliser une authentification sécurisée et un stockage protégé.</p>
+          </div>
+
+          <div id="admin-dashboard" class="dashboard hidden">
+            <div class="dashboard-header">
+              <h2>Tableau de bord admin</h2>
+              <button type="button" class="btn btn-light btn-small" id="logout-admin">Déconnexion</button>
+            </div>
+
+            <div class="dashboard-grid">
+              <article class="dashboard-card">
+                <h3>Accompagnements</h3>
+                <ul>
+                  <li>IKIGAI</li>
+                  <li>Confiance en soi</li>
+                  <li>EFT</li>
+                  <li>Constellation familiale</li>
+                </ul>
+              </article>
+
+              <article class="dashboard-card">
+                <h3>Tarifs</h3>
+                <ul>
+                  <li>Séance individuelle : À définir</li>
+                  <li>Séance découverte : À définir</li>
+                </ul>
+              </article>
+
+              <article class="dashboard-card">
+                <h3>Documents PDF</h3>
+                <ul>
+                  <li>Carte de valeurs</li>
+                  <li>Fiche gestion émotion</li>
+                  <li>Guide de respiration</li>
+                </ul>
+              </article>
+
+              <article class="dashboard-card">
+                <h3>Demandes de contact</h3>
+                <ul>
+                  <li>2 demandes récentes</li>
+                  <li>1 demande pour atelier collectif</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <img src="assets/logo.svg" alt="Logo Éveil Horizon" class="brand-logo" />
+            <span>Éveil Horizon</span>
+          </a>
+          <p>Un chemin vers soi, un pas après l'autre.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="services.html">Accompagnements</a></li>
+            <li><a href="collective.html">Collectifs</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://instagram.com/r.eveilspirituel" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="mailto:contact@eveilhorizon.fr">contact@eveilhorizon.fr</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Éveil Horizon</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
