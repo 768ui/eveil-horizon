@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Espace client Éveil Horizon : accès sécurisé, tableau de bord, modules, documents PDF, progression et historique des supports disponibles." />
+    <title>Espace client | Éveil Horizon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Accueil Éveil Horizon">
+          <img src="assets/logo.svg" alt="Logo Éveil Horizon" class="brand-logo" />
+          <span>Éveil Horizon</span>
+        </a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Accompagnements</a>
+          <a href="collective.html">Collectifs</a>
+          <a href="espace-client.html" class="active">Espace client</a>
+          <a href="tarifs.html">Tarifs</a>
+          <a href="boutique.html">Boutique</a>
+          <a href="contact.html">Contact</a>
+          <a href="admin.html" class="nav-cta">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero section-soft">
+        <div class="container narrow">
+          <p class="eyebrow">Espace client</p>
+          <h1>Un espace personnel pour suivre son chemin</h1>
+          <p>Chaque client n’accède qu’à ses propres contenus et documents. Les données restent protégées et ne sont pas exposées dans le code public GitHub.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-col align-start">
+          <div class="auth-box">
+            <h2>Connexion</h2>
+            <form id="client-login-form" class="styled-form">
+              <label>
+                Adresse e-mail
+                <input type="email" id="client-email" placeholder="nom@exemple.com" required />
+              </label>
+              <label>
+                Mot de passe
+                <input type="password" id="client-password" placeholder="••••••••" required />
+              </label>
+              <button type="submit" class="btn btn-primary full">Se connecter</button>
+            </form>
+            <p class="form-note">Version de démonstration. Pour un usage réel, connecter cette zone à une vraie solution d’authentification sécurisée.</p>
+          </div>
+
+          <div id="client-dashboard" class="dashboard hidden">
+            <div class="dashboard-header">
+              <h2>Tableau de bord</h2>
+              <button class="btn btn-light btn-small" id="logout-client">Déconnexion</button>
+            </div>
+
+            <div class="dashboard-grid">
+              <article class="dashboard-card">
+                <h3>Progression</h3>
+                <div class="progress-bar"><span style="width: 68%"></span></div>
+                <p>68 % du parcours terminé</p>
+              </article>
+
+              <article class="dashboard-card">
+                <h3>Carnets pédagogiques</h3>
+                <ul>
+                  <li>IKIGAI — 2 modules</li>
+                  <li>Confiance en soi — 3 modules</li>
+                </ul>
+              </article>
+
+              <article class="dashboard-card">
+                <h3>Exercices téléchargeables</h3>
+                <ul>
+                  <li><a href="#">Exercices confiance en soi.pdf</a></li>
+                  <li><a href="#">Carte de valeurs.pdf</a></li>
+                </ul>
+              </article>
+
+              <article class="dashboard-card">
+                <h3>Historique des supports</h3>
+                <ul>
+                  <li>Guide de respiration — 12 juin</li>
+                  <li>Fiche émotion — 18 juin</li>
+                  <li>Exercices IKIGAI — 29 juin</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <img src="assets/logo.svg" alt="Logo Éveil Horizon" class="brand-logo" />
+            <span>Éveil Horizon</span>
+          </a>
+          <p>Un chemin vers soi, un pas après l'autre.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="services.html">Accompagnements</a></li>
+            <li><a href="collective.html">Collectifs</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://instagram.com/r.eveilspirituel" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="mailto:contact@eveilhorizon.fr">contact@eveilhorizon.fr</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Éveil Horizon</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
